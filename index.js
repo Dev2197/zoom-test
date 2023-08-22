@@ -25,7 +25,7 @@ app.post('/', (req, res) => {
     iat: iat,
     exp: exp,
     appKey: process.env.ZOOM_MEETING_SDK_KEY,
-    tokenExp: iat + 60 * 60 * 2
+    // tokenExp: iat + 60 * 60 * 2
   }
 
   const sHeader = JSON.stringify(oHeader)
